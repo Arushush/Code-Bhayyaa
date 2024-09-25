@@ -1,0 +1,95 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url("https://i.pinimg.com/564x/7b/89/c9/7b89c96e243c25def2e66134eeb3cfd5.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: #267228;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile section (right-aligned) */
+.profile {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 30px;
+    font-size: 1.1rem;
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+/* Individual section styles */
+.section {
+    flex: 1;
+    background-color: #ffffff5a;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #185a20;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 15px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+}
