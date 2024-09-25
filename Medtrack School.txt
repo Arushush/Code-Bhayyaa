@@ -1,0 +1,11 @@
+Med Track School
+To help the medical faculties of the school keep a digital record of students for ease of aid.
+
+Annual health record
+Provides the previous data of students and help us modify for future use
+
+Medical Room
+Provides the data of students who visit medical room from time to time 
+
+
+
