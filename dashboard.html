@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile {
+            margin-top: 20px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #28a745;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Medtrack School</h1>
+    </div>
+
+    <div class="profile">
+        <span id="userName"></span>
+    </div>
+
+    <div class="content">
+        <h2>Annual Health</h2>
+        <a href="annual_health.html" class="button">Go to Annual Health Status</a>
+
+        <h2>Medical Room</h2>
+        <a href="medical_room.html" class="button">Go to Medical Room Services</a>
+    </div>
+
+    <script>
+        // Get user's name from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+        // Display user's name in the profile section
+        document.getElementById('userName').textContent = `Welcome, ${name}`;
+    </script>
+
+</body>
+</html>
