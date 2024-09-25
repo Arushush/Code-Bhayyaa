@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Room Services - Sub Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .emergency {
+            background-color: #dc3545;
+        }
+        .emergency:hover {
+            background-color: #c82333;
+        }
+        .back-button {
+            background-color: #28a745;
+        }
+        .back-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Medical Room Services</h1>
+
+        <a href="med_emergency.html" class="button emergency">! MEDICAL EMERGENCY !</a>
+        <a href="med_entry.html" class="button">Create New Entry</a>
+        <a href="search_entry.html" class="button">Search for an Old Entry</a>
+        <a href="med_history.html" class="button">Medical History</a>
+        <a href="med_delete.html" class="button">Delete Medical Entry</a>
+        <a href="main_menu.html" class="button back-button">Back to Main Menu</a>
+    </div>
+
+</body>
+</html>
