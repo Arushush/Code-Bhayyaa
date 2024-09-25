@@ -1,0 +1,46 @@
+
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-image: url("https://i.pinimg.com/564x/1e/5c/98/1e5c98ac87ca6f8b51432d9f47cafb81.jpg");
+            background-size: cover;
+            background-position: centre;
+            background-repeat: no-repeat;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.368);
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #11559d90;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            background-color: #f5f1f1c7;
+            color:black
+        }
+        .back-button:hover {
+            background-color: #ffffff;
+        }
+    
