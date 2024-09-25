@@ -1,46 +1,73 @@
+:root {
+    --primary-bg: rgba(255, 255, 255, 0.537); /* Slightly more opaque for better contrast */
+    --button-bg: rgba(8, 80, 31, 0.585); /* Slightly less transparent */
+    --button-hover-bg: #0e411b;
+    --back-button-bg: rgba(245, 241, 241, 0.9);
+    --back-button-hover-bg: #ffffff;
+    --text-color: #ffffff;
+    --black-text: #333333; /* Softer black for better readability */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
 
-        body {
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            background-image: url("https://i.pinimg.com/564x/1e/5c/98/1e5c98ac87ca6f8b51432d9f47cafb81.jpg");
-            background-size: cover;
-            background-position: centre;
-            background-repeat: no-repeat;
-            padding: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background: rgba(255, 255, 255, 0.368);
-            padding: 20px;
-            border-radius: 50px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .button {
-            display: block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            background-color: #11559d90;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            border-radius: 100px;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-        .back-button {
-            background-color: #f5f1f1c7;
-            color:black
-        }
-        .back-button:hover {
-            background-color: #ffffff;
-        }
-    
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("https://i.pinimg.com/564x/7b/89/c9/7b89c96e243c25def2e66134eeb3cfd5.jpg");
+    background-size: cover;
+    background-position: center; /* Corrected to 'center' */
+    background-repeat: no-repeat;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--primary-bg);
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 20px; /* Slightly less rounded for modern look */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Softer, deeper shadow */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
+    text-align: center;
+    transition: transform 0.3s; /* Add transform transition */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased font size for headings */
+    color: #333; /* Darker color for better contrast */
+}
+
+.button {
+    display: block;
+    padding: 12px 24px; /* Increased padding for comfort */
+    margin: 10px 0;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 50px; /* More rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.back-button {
+    background-color: var(--back-button-bg);
+    color: var(--black-text);
+    padding: 10px 20px; /* Added padding for consistency */
+    border-radius: 50px; /* Consistent with button style */
+}
+
+.back-button:hover {
+    background-color: var(--back-button-hover-bg);
+    transform: translateY(-3px); /* Lift effect on hover */
+}
