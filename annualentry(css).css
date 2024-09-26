@@ -1,6 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url("https://i.pinimg.com/564x/55/76/22/5576227d98fd1f39766045e053607cf5.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
     margin: 0;
     padding: 20px;
 }
@@ -8,7 +12,7 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.786);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
