@@ -1,7 +1,8 @@
 :root {
     --primary-bg: rgba(255, 255, 255, 0.537); /* Slightly more opaque for better contrast */
-    --button-bg: rgba(8, 80, 31, 0.585); /* Slightly less transparent */
-    --button-hover-bg: #0e411b;
+    --button-bg: rgba(10, 37, 128, 0.585); /* Slightly less transparent */
+    color: #00d4ff;
+    --button-hover-bg: #007bff;
     --back-button-bg: rgba(245, 241, 241, 0.9);
     --back-button-hover-bg: #ffffff;
     --text-color: #ffffff;
@@ -11,7 +12,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url("https://i.pinimg.com/564x/7b/89/c9/7b89c96e243c25def2e66134eeb3cfd5.jpg");
+    background: linear-gradient(90deg, #007bff, #00d4ff);
     background-size: cover;
     background-position: center; /* Corrected to 'center' */
     background-repeat: no-repeat;
@@ -41,7 +42,7 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 2rem; /* Increased font size for headings */
-    color: #333; /* Darker color for better contrast */
+    color: white; /* Darker color for better contrast */
 }
 
 .button {
