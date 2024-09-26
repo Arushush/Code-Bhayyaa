@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Health Status Entry</title>
+    <link rel="stylesheet" href="annualentry(css).css">
+</head>
+<body>
+    <div class="container">
+        <h1>Annual Health Status Entry</h1>
+        <form id="healthStatusForm">
+            <label for="admissionNumber">Admission Number:</label>
+            <input type="text" id="admissionNumber" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="standard">Standard:</label>
+            <input type="number" id="standard" required>
+
+            <label for="section">Section:</label>
+            <input type="text" id="section" required>
+
+            <label for="guardianTel">Guardian's Telephone Number:</label>
+            <input type="tel" id="guardianTel" required>
+
+            <label for="dob">Date of Birth (yyyy-mm-dd):</label>
+            <input type="date" id="dob" required>
+
+            <label for="bloodGroup">Blood Group:</label>
+            <select id="bloodGroup" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label>Allergy:</label>
+            <input type="radio" name="allergy" value="Yes" required> Yes
+            <input type="radio" name="allergy" value="No"> No
+
+            <label>Any disease?</label>
+            <input type="radio" name="disease" value="Yes" required> Yes
+            <input type="radio" name="disease" value="No"> No
+
+            <label for="medication">Regular Medication:</label>
+            <input type="radio" name="medication" value="Yes" required> Yes
+            <input type="radio" name="medication" value="No"> No
+
+            <label for="fitnessStatus">Fitness Status:</label>
+            <select id="fitnessStatus" required>
+                <option value="Fit for Participation">Fit for Participation</option>
+                <option value="Restricted Participation">Restricted Participation</option>
+                <option value="No Participation">No Participation</option>
+            </select>
+
+            <label for="docName">Emergency Doctor's Name:</label>
+            <input type="text" id="docName" required>
+
+            <label for="docTel">Emergency Doctor's Telephone Number:</label>
+            <input type="tel" id="docTel" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="annualentry(js).js"></script>
+</body>
+</html>
