@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Health Status Record</title>
+    <link rel="stylesheet" href="annualentry(css).css">
+</head>
+<body>
+    <div class="container">
+        <h1>Annual Health Status Record</h1>
+
+        <!-- Form for submitting new records -->
+        <form id="healthForm">
+            <label for="admn_no">Admission Number:</label>
+            <input type="text" id="admn_no" name="admn_no" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="standard">Standard:</label>
+            <input type="text" id="standard" name="standard" required>
+
+            <label for="section">Section:</label>
+            <input type="text" id="section" name="section" required>
+
+            <label for="tel_no">Telephone Number:</label>
+            <input type="text" id="tel_no" name="tel_no" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="blood_grp">Blood Group:</label>
+            <input type="text" id="blood_grp" name="blood_grp" required>
+
+            <label for="allergy">Allergy:</label>
+            <input type="text" id="allergy" name="allergy">
+
+            <label for="disease">Disease:</label>
+            <input type="text" id="disease" name="disease">
+
+            <label for="medication">Medication:</label>
+            <input type="text" id="medication" name="medication">
+
+            <label for="fit">Fit for Participation:</label>
+            <select id="fit" name="fit">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="doc_name">Doctor Name:</label>
+            <input type="text" id="doc_name" name="doc_name" required>
+
+            <label for="doc_tel_no">Doctor's Telephone:</label>
+            <input type="text" id="doc_tel_no" name="doc_tel_no" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Form for searching records -->
+        <h2>Search Records</h2>
+        <form id="searchForm">
+            <label for="searchOption">Search By:</label>
+            <select id="searchOption" name="searchOption">
+                <option value="admn_no">Admission Number</option>
+                <option value="standard">Standard</option>
+                <option value="section">Section</option>
+            </select>
+
+            <input type="text" id="searchValue" name="searchValue" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="searchResults"></div>
+    </div>
+
+    <script src="annualentry.js"></script>
+</body>
+</html>
