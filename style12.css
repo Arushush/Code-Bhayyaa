@@ -1,19 +1,19 @@
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url("https://i.pinimg.com/564x/7b/89/c9/7b89c96e243c25def2e66134eeb3cfd5.jpg");
-    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    /*background-repeat: no-repeat;
     background-position:center;
     background-attachment:fixed;
     background-size:cover;
     margin: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6;*/
 }
 
 /* Header styles */
 .header {
-    background-color: #267228;
+    background-color: #0056b3;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -40,7 +40,7 @@ body {
 /* Individual section styles */
 .section {
     flex: 1;
-    background-color: #ffffff5a;
+    background-color: #ffffff77;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -54,7 +54,7 @@ body {
 }
 
 h2 {
-    color: #185a20;
+    color: white;
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
